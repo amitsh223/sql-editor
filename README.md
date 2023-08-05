@@ -14,7 +14,6 @@ The given task was given by Atlan. According to the task I have to build an onli
  - [ ] **Statement with Queries**:- I have given the English statement such that if the user have difficulty in understanding SQL queries. He/She can get better understanding from the statement.
  - [ ] **Table Data**:- Data of the tables is also there in the table tab such that user can able to see the data of the tables in order to get the better understanding of table structure.
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
 ## Problem Statement
 - [ ] Create, design and implement a web-based application capable of running SQL queries and displaying the results of said query. The application must include a space which accepts SQL queries in the form of user inputs, then runs the given query, and displays the result within the application..
