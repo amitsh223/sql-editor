@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Divider, Stack, Tab, Tabs, Typography } from '@mui/material';
 import { Panel } from '../Panel';
 import DataTable from '../DataTable/DataTable';
@@ -11,12 +11,15 @@ import schemaColumnDefinition from '../../Data/Schemas/SchemaColumnDefinition';
 import availableQueries from '../../Data/Queries';
 import { QUERIES } from '../Utils/MediaQueris';
 import { OutputPanel } from '../OutputPanel';
+import { HistoryContext } from '../ContextApi/HistoryContext';
 
 export default function InputPanel({ result, setResults }) {
     const [activeInputTab, setActiveInputTab] = React.useState(0);
     const [activeInfoTab, setActiveInfoTab] = React.useState(1);
 
     const [query, setQuery] = React.useState("");
+
+    const a = useContext(HistoryContext);
 
     return (
         <Wrapper>
@@ -60,6 +63,7 @@ export default function InputPanel({ result, setResults }) {
                         <Tab label="Available Queries" />
                         <Tab label="Tables" />
                         <Tab label="Schemas" />
+                        <Tab label="History"></Tab>
                     </Tabs>
                 </Panel.Header>
                 <TabPanel column activeTab={activeInfoTab} id={0} hideOnDesktop>
@@ -68,6 +72,49 @@ export default function InputPanel({ result, setResults }) {
                 <TabPanel column activeTab={activeInfoTab} id={1}>
                     {
                         availableQueries.map((item) => (
+                            <Accordion style={{
+                                border: '1px solid var(--grey-100)'
+                            }}>
+                                <AccordionSummary
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header"
+                                >
+                                    <Stack style={{ width: "100%" }} direction="row"
+                                        justifyContent="space-between" alignItems="center" spacing={2} >
+                                        <Typography>{item.name}</Typography>
+                                        <Button
+                                            size="small"
+                                            variant="contained" sx={{ borderRadius: "4px" }}
+                                            onClick={() => {
+                                                setResults(item.result)
+                                                setQuery(item.query)
+                                                a.update(item)
+                                                console.log(a.historyList);
+                                            }}>
+                                            Run
+                                        </Button>
+                                    </Stack>
+                                </AccordionSummary>
+                                <StyledAccordinDetails>
+                                    <Typography>
+                                        {item.query}
+                                    </Typography>
+                                </StyledAccordinDetails>
+                            </Accordion>
+                        ))
+                    }
+                </TabPanel>
+                <TabPanel gap={"24px"} column activeTab={activeInfoTab} id={2}>
+                    <DataTable name="Categories Table" columns={categoriesSchema} items={categories} />
+                    <DataTable name="Customers Table" columns={customerSchema} items={customers} />
+                </TabPanel>
+                <TabPanel gap={"24px"} column activeTab={activeInfoTab} id={3}>
+                    <DataTable name="Categories Schema" columns={schemaColumnDefinition} items={categoriesSchema} />
+                    <DataTable name="Customer Schema" columns={schemaColumnDefinition} items={customerSchema} />
+                </TabPanel>
+                <TabPanel column activeTab={activeInfoTab} id={4}>
+                    {
+                        a.historyList.map((item) => (
                             <Accordion style={{
                                 border: '1px solid var(--grey-100)'
                             }}>
@@ -97,14 +144,6 @@ export default function InputPanel({ result, setResults }) {
                             </Accordion>
                         ))
                     }
-                </TabPanel>
-                <TabPanel gap={"24px"} column activeTab={activeInfoTab} id={2}>
-                    <DataTable name="Categories Table" columns={categoriesSchema} items={categories} />
-                    <DataTable name="Customers Table" columns={customerSchema} items={customers} />
-                </TabPanel>
-                <TabPanel gap={"24px"} column activeTab={activeInfoTab} id={3}>
-                    <DataTable name="Categories Schema" columns={schemaColumnDefinition} items={categoriesSchema} />
-                    <DataTable name="Customer Schema" columns={schemaColumnDefinition} items={customerSchema} />
                 </TabPanel>
             </Panel>
         </Wrapper>

@@ -2,7 +2,32 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Link to the application (https://amitsh223.github.io/sql-editor/)
+The given task was given by Atlan. According to the task I have to build an online editor which enables user to run SQL queries. 
+
+#  Features
+
+ - [ ] **Tab Based Interface**: Allows user to easily switch between multiple queries . Each tab maintains its own state so while you switch the tabs state will still there as soon as you reload the page.
+ - [ ] **History**: This application keeps the tack of queries that was ran by the user in order to track them easily what queries user have ran till now.
+ - [ ] **Schema**: Schema of the tables is provided such that user can easily view the schema of the table and it will also help the user analyze the table structure.
+ - [ ] **Dependencies**: - Minimal dependencies have been used for the creation of the page. I have used MUI dependency in order to fast forward the creation.
+ - [ ] **Statement with Queries**:- I have given the English statement such that if the user have difficulty in understanding SQL queries. He/She can get better understanding from the statement.
+ - [ ] **Table Data**:- Data of the tables is also there in the table tab such that user can able to see the data of the tables in order to get the better understanding of table structure.
+
+StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+
+## Problem Statement
+- [ ] Create, design and implement a web-based application capable of running SQL queries and displaying the results of said query. The application must include a space which accepts SQL queries in the form of user inputs, then runs the given query, and displays the result within the application..
+- [ ] Your application must have more than one query accompanied by its corresponding table of data. You can have a predefined set of queries and a predefined set of tables showing some data. You must also provide a way for us to toggle between these queries and choose any query and view the table of data accompanying it. It can be a dropdown or any other toggling mechanism.
+
+## Performance Audit
+
+
+
+
+
+
+<!-- ## Available Scripts
 
 In the project directory, you can run:
 
@@ -67,4 +92,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->

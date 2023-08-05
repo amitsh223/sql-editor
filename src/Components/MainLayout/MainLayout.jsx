@@ -8,7 +8,7 @@ export default function MainLayout() {
     const [result, setResult] = useState(null);
     return (
         <Wrapper>
-            <Panel >
+            <Panel>
                 <InputPanel result={result} setResults={setResult}/>
             </Panel>
             <Panel borderLeft hideOnTablet>
