@@ -27,7 +27,7 @@ According to LightHouse
  - [ ] Speed Index: 1.9 sec
  
  
-Arroding to (https://gtmetrix.com)
+According to (https://gtmetrix.com)
  - [ ] Fully loaded time  477ms
  - [ ] Performance 100%
  - [ ] Grade A
