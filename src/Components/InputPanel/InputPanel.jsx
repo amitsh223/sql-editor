@@ -89,7 +89,6 @@ export default function InputPanel({ result, setResults }) {
                                                 setResults(item.result)
                                                 setQuery(item.query)
                                                 a.update(item)
-                                                console.log(a.historyList);
                                             }}>
                                             Run
                                         </Button>

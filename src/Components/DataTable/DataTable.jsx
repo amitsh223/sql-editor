@@ -14,8 +14,8 @@ export default function DataTable({ name, columns, items }) {
                     </TableRow>
                     <TableRow >
                         {
-                            columns?.map((col) => (
-                                <StyledTableCell>{col.label}</StyledTableCell>
+                            columns?.map((col ,index) => (
+                                <StyledTableCell key={index}>{col.label}</StyledTableCell>
                             ))
                         }
                     </TableRow>
@@ -25,10 +25,10 @@ export default function DataTable({ name, columns, items }) {
                         items.map((item,index) => (
                             <TableRow key={index}>
                                 {
-                                    columns.map((col) =>{
+                                    columns.map((col,index) =>{
                                         const value = item[col.id];
                                         return (
-                                            <TableCell >{value}</TableCell>
+                                            <TableCell key={index}>{value}</TableCell>
                                         );
                                     })
                                 }

@@ -19,9 +19,30 @@ The given task was given by Atlan. According to the task I have to build an onli
 - [ ] Create, design and implement a web-based application capable of running SQL queries and displaying the results of said query. The application must include a space which accepts SQL queries in the form of user inputs, then runs the given query, and displays the result within the application..
 - [ ] Your application must have more than one query accompanied by its corresponding table of data. You can have a predefined set of queries and a predefined set of tables showing some data. You must also provide a way for us to toggle between these queries and choose any query and view the table of data accompanying it. It can be a dropdown or any other toggling mechanism.
 
-## Performance Audit
+## Performance
+According to LightHouse
+ - [ ] First Contentful Paint: 1.0 sec
+ - [ ] Largest Contentful Paint: 1.9 sec
+ - [ ] Cumulative Layout Shift: 0
+ - [ ] Speed Index: 1.9 sec
+ 
+ 
+Arroding to (https://gtmetrix.com)
+ - [ ] Fully loaded time  477ms
+ - [ ] Performance 100%
+ - [ ] Grade A
+
+ ![image5](https://github.com/amitsh223/images/assets/56124211/5f4e4e89-e40d-4256-bd58-11b0066794a4)
 
 
+ ## Screenshots
+![image4](https://github.com/amitsh223/images/assets/56124211/e0e5fbc7-4405-4f33-8137-61a673a5e2e0)
+
+![image](https://github.com/amitsh223/images/assets/56124211/087f7b61-7ed0-4cde-99b5-ba686a397f5b)
+
+![image2](https://github.com/amitsh223/images/assets/56124211/c74c3061-24b6-4780-89c6-97c2b82691e0)
+
+![image3](https://github.com/amitsh223/images/assets/56124211/68bcb78d-6df0-4adf-9fe0-ca95c61e2ef4)
 
 
 

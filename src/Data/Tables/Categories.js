@@ -59,7 +59,17 @@ const categories = [
 		"categoryId" : 8,
 		"description" : "Seaweed and fish",
 		"name" : "Seafood"
-	}
+	},
+	{
+		"categoryId" : 9,
+		"description" : "Garlic salt, Onion salt",
+		"name" : "Condiments"
+	},
+	{
+		"categoryId" : 10,
+		"description" : "Celery salt",
+		"name" : "Condiments"
+	},
 ];
 
 export default categories;
