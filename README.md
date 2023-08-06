@@ -45,9 +45,16 @@ Arroding to (https://gtmetrix.com)
 ![image3](https://github.com/amitsh223/images/assets/56124211/68bcb78d-6df0-4adf-9fe0-ca95c61e2ef4)
 
 
+## Further Enhancements
+ - [ ] Search functionality can be added such that user can easily filter out the data. 
+ - [ ] Export CSV can be there such that user can able to download the data based on the query result.
+ - [ ] Sorting can also be implemented such that user can also able to sort the data or can apply different filters.
 
 
-<!-- ## Available Scripts
+
+
+
+## Available Scripts
 
 In the project directory, you can run:
 
@@ -112,4 +119,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
