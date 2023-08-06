@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sql-editor/static/css/main.d3ca2922.css",
-    "main.js": "/sql-editor/static/js/main.77c840e3.js",
+    "main.js": "/sql-editor/static/js/main.0427d069.js",
     "static/js/787.377507dd.chunk.js": "/sql-editor/static/js/787.377507dd.chunk.js",
     "index.html": "/sql-editor/index.html",
     "main.d3ca2922.css.map": "/sql-editor/static/css/main.d3ca2922.css.map",
-    "main.77c840e3.js.map": "/sql-editor/static/js/main.77c840e3.js.map",
+    "main.0427d069.js.map": "/sql-editor/static/js/main.0427d069.js.map",
     "787.377507dd.chunk.js.map": "/sql-editor/static/js/787.377507dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d3ca2922.css",
-    "static/js/main.77c840e3.js"
+    "static/js/main.0427d069.js"
   ]
 }
