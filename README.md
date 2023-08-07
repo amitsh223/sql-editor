@@ -1,6 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Link to the application (https://amitsh223.github.io/sql-editor/)
 The given task was given by Atlan. According to the task I have to build an online editor which enables user to run SQL queries. 
